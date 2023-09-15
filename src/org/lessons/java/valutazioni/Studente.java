@@ -26,4 +26,12 @@ public class Studente {
 
 	}
 
+	public void printStudentAndVerdict() {
+		System.out.println(
+				"\nID stud: " + this.idStudent + "|| Assenze: " + this.percAbs + "%" + " || Media voto: " + this.AvgVote);
+		
+		System.out.print("Lo studente e' stato bocciato? ");
+		this.isFailed();
+	}
+
 }

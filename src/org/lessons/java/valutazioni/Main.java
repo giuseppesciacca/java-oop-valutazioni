@@ -46,5 +46,24 @@ public class Main {
 		System.out.println("Tot promossi: " + studentsProm.length);
 		System.out.println("Tot bocciati: " + studentsFail.length);
 
+		System.out.println("\n*************");
+
+		float maxVote = Integer.MIN_VALUE;
+		float minVote = Integer.MAX_VALUE;
+
+		for (int i = 0; i < studentsProm.length; i++) {
+			if (maxVote < studentsProm[i].AvgVote) {
+				maxVote = studentsProm[i].AvgVote;
+			}
+		}
+		System.out.println("Max avg vote is: " + maxVote);
+
+		for (int i = 0; i < studentsFail.length; i++) {
+			if (minVote > studentsFail[i].AvgVote) {
+				minVote = studentsFail[i].AvgVote;
+			}
+		}
+		System.out.println("Min avg vote is: " + minVote);
+
 	}
 }

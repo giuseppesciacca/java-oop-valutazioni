@@ -15,13 +15,13 @@ public class Studente {
 	public void isFailed() {
 
 		if (this.percAbs > 50) {
-			System.out.println("Si è bocciato");
+			System.out.println("Si e' bocciato");
 		} else if ((this.percAbs > 25 && this.percAbs < 50) && (AvgVote > 2)) {
-			System.out.println("No, è promosso");
+			System.out.println("No, e' promosso");
 		} else if (this.percAbs < 25 && AvgVote >= 2) {
-			System.out.println("No, è promosso");
+			System.out.println("No, e' promosso");
 		} else {
-			System.out.println("Si è bocciato");
+			System.out.println("Si e' bocciato");
 		}
 
 	}

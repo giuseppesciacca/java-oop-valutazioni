@@ -56,14 +56,14 @@ public class Main {
 				maxVote = studentsProm[i].AvgVote;
 			}
 		}
-		System.out.println("Max avg vote is: " + maxVote);
+		System.out.println("Max avg vote among the promoted is: " + maxVote);
 
 		for (int i = 0; i < studentsFail.length; i++) {
 			if (minVote > studentsFail[i].AvgVote) {
 				minVote = studentsFail[i].AvgVote;
 			}
 		}
-		System.out.println("Min avg vote is: " + minVote);
+		System.out.println("Min avg vote among the failures is: " + minVote);
 
 	}
 }

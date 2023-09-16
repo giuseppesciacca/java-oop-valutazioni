@@ -18,10 +18,10 @@ public class Main {
 			students[i] = new Studente(i + 1, randomPercAbs, randomAvgVote);
 			students[i].printStudentAndVerdict();
 
-			if (!students[i].isFail) {
+			if (!students[i].isFail()) {
 				numStudProm = numStudProm + 1;
 
-			} else if (students[i].isFail) {
+			} else if (students[i].isFail()) {
 				numStudFail = numStudFail + 1;
 			}
 		}
@@ -32,11 +32,11 @@ public class Main {
 		int failIndex = 0;
 
 		for (int i = 0; i < students.length; i++) {
-			if (!students[i].isFail) {
+			if (!students[i].isFail()) {
 				studentsProm[promIndex] = students[i];
 				promIndex = promIndex + 1;
 
-			} else if (students[i].isFail) {
+			} else if (students[i].isFail()) {
 				studentsFail[failIndex] = students[i];
 				failIndex = failIndex + 1;
 			}
